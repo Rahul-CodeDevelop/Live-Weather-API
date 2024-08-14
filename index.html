@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Jost:wght@500&family=Nunito:wght@500&family=Open+Sans:wght@300&family=Prompt:wght@500&family=Roboto+Mono:wght@100&family=Roboto+Slab:wght@700&family=Sofia+Sans:wght@500&display=swap"
+        rel="stylesheet">
+    <title>Weather API</title>
+    <link rel="stylesheet" href="style.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>
+
+<body>
+
+    <h1>This project is developed by Rahul</h1>
+
+    <div class="container">
+        <div class="top">
+            <p id="cityName"></p>
+        </div>
+        <div class="search-container">
+            <input type="search" id="search" placeholder="Search Location">
+            <button id="search-icon" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                    fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                </svg></button>
+
+
+        </div>
+        <div class="currentLoc-container">
+
+
+            <button id="currentLoc_btn">Get Current Location <span><svg id="loc_icon" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 384 512">
+                        <path
+                            d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                    </svg></span> </button>
+            <div>
+
+            </div>
+        </div>
+
+        <div class="card">
+
+            <div class="left"> <!--LEFT SIDE OF CARD-->
+
+                <div class="date">
+                    <p id="date"></p>
+
+                </div>
+                <div class="cloud">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1779/1779940.png" alt="" id="cloud-logo">
+                </div>
+                <div>
+                    <p id="description"></p>
+                </div>
+            </div>
+
+
+            <div class="right"> <!--RIGHT SIDE OF CARD-->
+                <div class="temp_right">
+                    <div>
+                        <img class="tilde"
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAWBJREFUeNrtm8GNgzAUBSmBElICJVACJaSELYESUgIlUAIlcJ1bSqAD9uKVvizHkOSUzVj6F8Sz+YOx5kKz73vzzdUIQAACEIAABCAAAcQCJmAHNmAE2qYygDZk/uoOjM3BAC7AXMheT2Q7YMmyKzDE+94BECdtKw+xZffHmg8aqGWnSvZaye0R4NMA0gI9cKtBKDQwplyfvdXpoPktNdQDQ1qrlo3N17LXlwE8WGxNi/Tp+lYiHrJxJy0p2wE/WfNdIRsBzgHsmDXfFj7HCOEGdC8DeHa7HUDIq9h8aGSpZO8H2TX/nF4GkCYdCpMujx6iAPCenw3A5UR2LGSnkwfzGHbaewA+ebx1BnwlAD1AD9AD9AA9QA/QA/QAPUAP0AP0AD1AD9AD9AA9QA/QA/QAPUAP0AP0AD1AD9AD9AA9QA/QA/QAPUAP0AP0AD3gP3uA/wsIQAACEIAABCCAb6hfRzSoz4hgnE4AAAAASUVORK5CYII="
+                            alt="">
+                    </div>
+                    <h1><span id="temp"></span><span id="unit">°C</span></h1>
+                </div>
+
+                <div id="hum">
+                    <div>
+                        <img id="humidity_icon" src="https://cdn-icons-png.flaticon.com/512/5664/5664979.png" alt="">
+                    </div>
+                    <div>
+                        <p>Humadity: <span id="humidity"></span>%</p>
+                    </div>
+                </div>
+                <div id="wind_speed">
+                    <div>
+                        <img id="wind_icon" src="./img/fan-rotate.png" alt="">
+                    </div>
+                    <div>
+                        <p>Wind Speed: <span id="wind"></span>
+                            km/h </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+    <!-- <footer>Developed by Rahul Gaikwad</footer> -->
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

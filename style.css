@@ -1,0 +1,244 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(https://wallpaperaccess.com/full/355960.jpg);
+    /* background-image: url(https://images.unsplash.com/photo-1560773526-435221de2527?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80); */
+
+}
+
+* {
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Jost', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Prompt', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+.container {
+    width: 100vw;
+    /* max-width: 50vw; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    width: 60vw;
+    background-color: rgba(0, 0, 0, .5);
+    color: #ffffff;
+    border-radius: 2rem;
+
+}
+
+
+
+.card {
+    display: flex;
+    justify-content: space-evenly;
+
+    /* margin-top: 2rem; */
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left {
+    margin-top: 1rem;
+    padding: .5rem;
+
+
+}
+
+.right {
+    margin-top: 1rem;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+}
+
+#search {
+    padding: .7rem;
+    border-radius: 1rem;
+    background-color: rgba(0, 0, 0, .5);
+    color: #ffffff;
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+}
+
+#search-icon {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(0, 0, 0, .5);
+    color: #ffffff;
+    margin-top: .5rem;
+    margin-left: .5rem;
+}
+
+.currentLoc-container {
+    display: flex;
+    justify-content: center;
+    margin-top: .5rem;
+    margin-right: 2.5rem;
+
+}
+
+#currentLoc_btn {
+    padding: .5em;
+    border-radius: .5rem;
+    border: none;
+    background-color: rgb(98, 237, 98);
+
+    font-size: 1rem;
+
+}
+
+#loc_icon {
+    width: 8px;
+
+}
+
+
+#search-icon,
+#currentLoc_btn:hover {
+    cursor: pointer;
+}
+
+#cloud-logo {
+    width: 7rem;
+}
+
+
+
+#cityName {
+    color: rgb(167, 193, 39);
+    font-size: 1rem;
+    text-align: center;
+    width: 15rem;
+}
+
+.temp_right {
+    width: 8rem;
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#temp {
+    font-size: 5rem;
+    opacity: .9;
+    font-weight: normal;
+}
+
+#unit {
+    font-size: 5rem;
+    font-weight: normal;
+    opacity: .3;
+}
+
+#description {
+    font-size: larger;
+    padding-left: .7rem;
+
+}
+
+#date {
+    font-size: larger;
+    padding-left: .7rem;
+}
+
+.tilde {
+    opacity: .5;
+    width: 2rem;
+}
+
+#hum,
+#wind_speed {
+    font-size: larger;
+}
+
+#wind_speed {
+    display: flex;
+    align-items: center;
+}
+
+#wind_icon {
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    filter: invert(100%);
+    animation: rotation 3s linear infinite;
+}
+
+#humidity_icon {
+    width: 20px;
+    padding: 5px;
+    filter: invert(100%);
+}
+
+#hum {
+    display: flex;
+    align-items: center;
+    font-size: larger;
+
+}
+
+#wind,
+#humidity {
+    opacity: .8;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+
+}
+
+@media only screen and (max-width: 650px) {
+    .container {
+      width: 95vw;
+      
+    }
+
+    #temp {
+        /* background-color: blueviolet; */
+        font-size: 3rem;
+    }
+
+    #unit {
+        font-size: 3rem;
+      
+    }
+    .tilde {
+        
+        width: 2rem;
+    }
+  }
+
+
+
+
+
